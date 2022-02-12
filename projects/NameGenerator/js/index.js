@@ -11,7 +11,8 @@ function singleExtraction() {
             nomiEstratti.push(nomeCorrente);
         }
     }
-    console.log(nomiEstratti);
+    nomiEstratti.toString();
+    console.log(nomiEstratti.join(" "));
+    document.getElementById("Result").innerHTML = `${nomiEstratti.join(" ")}`;
     nomiEstratti = [];
 }
-singleExtraction();

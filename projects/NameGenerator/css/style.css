@@ -6,4 +6,26 @@ body {
 
 .Generator {
   text-align: center;
+  position: fixed;
+  width: 10%;
+  height: 10%;
+  top: 30%;
+  right: 50%;
+}
+
+.Title {
+  text-align: center;
+  font-size: inherit;
+  color: white;
+  position: fixed;
+  top: 25%;
+  right: 50%;
+}
+
+.Result {
+  text-align: center;
+  color: white;
+  position: fixed;
+  top: 45%;
+  right: 50%;
 }
