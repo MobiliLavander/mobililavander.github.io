@@ -1,21 +1,29 @@
 function singleExtraction(nomi, gruppi) {
-    let gruppiEstratti = [];
+    let nomiGruppo = [];
     let nomiEstratti = [];
     const nomiDaEstrarre = 4;
     const nomiEstraibili = ["Basa", "Bhoyrub", "Boezio", "Cossettini", "Cova", "D'Agosto", "Di Lenardo", "Dordolo", "Ellero", "Fabbro", "Garofolo", "Giancristofaro", "Iacuzzi", "Moro", "Nobile", "Pagnutti", "Pellegrini", "Pellizzari", "Ruffo", "Savorgano", "Venutrini"];
 
-    for (let i = 0; i = gruppi - gruppiEstratti.lenght; i++) {
-        for (let i = 0; i = nomi - nomiEstratti.length; i++) {
+    console.log(`Estrazione fatta su: ${nomiEstraibili.length} persone, per ${gruppi} gruppi, composti da ${nomi} persone ognuno.`)
+    //Crezione Gruppi
+    for (let i = 0; i < gruppi; i++) {
+        //Creazione singolo gruppo
+        for (let i = 0; i = nomi - nomiGruppo.length; i++) {
+            //Estrazione
             let nomeCorrente = nomiEstraibili[(Math.floor(Math.random() * nomiEstraibili.length))]
+            //Controllo per nomi dobbi
             if (nomiEstratti.includes(nomeCorrente)) {
 
             } else {
                 nomiEstratti.push(nomeCorrente);
+                nomiGruppo.push(nomeCorrente);
             }
         }
-        nomiEstratti.toString();
-        console.log(nomiEstratti.join(" "));
-        document.getElementById("Result").innerHTML = `${nomiEstratti.join(" ")}`;
-        nomiEstratti = [];
+        //Converting array into string
+        nomiGruppo.toString();
+        console.log(nomiGruppo.join(" "));
+        nomiGruppo = [];
+        //document.getElementById("Result").innerHTML = `${nomiEstratti.join(" ")}`;
     }
+    nomiEstratti = [];
 };
