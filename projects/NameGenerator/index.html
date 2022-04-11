@@ -9,7 +9,7 @@
 
 <body>
     <div class="Header" id="topbar">
-        <div class="Nomi">
+        <div class="TastiHeader">
             <p style="margin: 0px;">Nomi</p>
             <select name="Nomi" id="nomi">
                 <option value="1">1</option>
@@ -29,7 +29,7 @@
                 <option value="15">15</option>
             </select>
         </div>
-        <div class="Gruppi">
+        <div class="TastiHeader">
             <p style="margin: 0px;">Gruppi</p>
             <select name="Gruppi" id="gruppi" style="align-self: center;">
                 <option value="1">1</option>
@@ -52,7 +52,7 @@
         <p id="Result" class="Result"> Risultati</p>
     </div>
 
-    <div>
+    <div class="Gen">
         <p class="Title"> Advanced Name Generator v1.0 </p>
         <button class="Generator" id="gen"
             onClick="singleExtraction(document.getElementById('nomi').value, document.getElementById('gruppi').value)">Genera

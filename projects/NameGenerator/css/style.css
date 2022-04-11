@@ -11,24 +11,27 @@ body {
   overflow: hidden;
 }
 
-.Nomi{
+.TastiHeader {
   width:fit-content;
   height: fit-content;
+
+  overflow:hidden;
+  float: left;
+
   padding: 1px;
   border: 1px #000000 solid;
-  float:left;
+  margin-right: 5px;
 }
 
-.Gruppi {
-  position: relative;
-  align-items: center;
+.Gen {
   width:fit-content;
   height: fit-content;
-  padding: 1px;
-  border: 1px #000000 solid;
-  overflow:hidden;
-  left: 5px;
+  padding: 5px;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
 }
+
 .Generator {
   text-align: center;
   position: fixed;
