@@ -8,44 +8,57 @@
 </head>
 
 <body>
-<p class="Title" > Advanced Name Generator v1.0 </p>
-<button class="Generator" id="gen" onClick="singleExtraction(document.getElementById('nomi').value, document.getElementById('gruppi').value)" > Genera </button>
-<p style="color: white;">Nomi Gruppi</p>
-<select name="Nomi" id="nomi">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-</select>
-<select name="Gruppi" id="gruppi">
-    <option value="1">1</option>
-    <option value="2">2</option>
-    <option value="3">3</option>
-    <option value="4">4</option>
-    <option value="5">5</option>
-    <option value="6">6</option>
-    <option value="7">7</option>
-    <option value="8">8</option>
-    <option value="9">9</option>
-    <option value="10">10</option>
-    <option value="11">11</option>
-    <option value="12">12</option>
-    <option value="13">13</option>
-    <option value="14">14</option>
-    <option value="15">15</option>
-</select>
-<p id="Result" class="Result"> Risultati</p>
+    <div class="Header" id="topbar">
+        <div class="Nomi">
+            <p style="margin: 0px;">Nomi</p>
+            <select name="Nomi" id="nomi">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+            </select>
+        </div>
+        <div class="Gruppi">
+            <p style="margin: 0px;">Gruppi</p>
+            <select name="Gruppi" id="gruppi" style="align-self: center;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+            </select>
+        </div>
+        <p id="Result" class="Result"> Risultati</p>
+    </div>
+
+    <div>
+        <p class="Title"> Advanced Name Generator v1.0 </p>
+        <button class="Generator" id="gen"
+            onClick="singleExtraction(document.getElementById('nomi').value, document.getElementById('gruppi').value)">Genera
+        </button>
+    </div>
+
 </body>
 
 </html>

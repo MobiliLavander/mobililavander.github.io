@@ -1,9 +1,34 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #101214;
+  background-color: #ffffff;
 }
 
+.Header{
+  padding: 5px;
+  color: black;
+  background-color: darkgray;
+  overflow: hidden;
+}
+
+.Nomi{
+  width:fit-content;
+  height: fit-content;
+  padding: 1px;
+  border: 1px #000000 solid;
+  float:left;
+}
+
+.Gruppi {
+  position: relative;
+  align-items: center;
+  width:fit-content;
+  height: fit-content;
+  padding: 1px;
+  border: 1px #000000 solid;
+  overflow:hidden;
+  left: 5px;
+}
 .Generator {
   text-align: center;
   position: fixed;
@@ -16,7 +41,7 @@ body {
 .Title {
   text-align: center;
   font-size: inherit;
-  color: white;
+  color: rgb(0, 0, 0);
   position: fixed;
   top: 25%;
   right: 50%;
@@ -24,7 +49,7 @@ body {
 
 .Result {
   text-align: center;
-  color: white;
+  color: rgb(0, 0, 0);
   position: fixed;
   top: 45%;
   right: 50%;
