@@ -18,7 +18,7 @@ body {
   width: fit-content;
   height: fit-content;
 
-  overflow:auto;
+  overflow: auto;
   float: left;
   text-decoration: none;
   color: inherit;
@@ -67,9 +67,14 @@ body {
   float: none;
 }
 
+.Header .menu a:active {
+  background-color: white;
+  color: #1e2124;
+}
+
 /* When overing over the home button open the menu */
-.Header .home:hover + .menu{
-  display:block;
+.Header .home:hover+.menu {
+  display: block;
 }
 
 /* Keeping the menu open when overing over the options */
