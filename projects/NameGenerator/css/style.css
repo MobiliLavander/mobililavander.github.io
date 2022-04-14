@@ -1,23 +1,22 @@
+@font-face {
+  font-family: Aquire;
+  src: url(/resources/fonts/AquireBold-8Ma60.otf);
+}
+
 body {
   padding: 0;
   margin: 0;
   background-color: #ffffff;
   overflow: hidden;
+  font-family: Aquire;
 }
 
-@font-face {
-  font-family: Aquire;
-  src: url(/resources/fonts/AquireBold-8Ma60.otf);
-}
 
 /* Header nav-bar setup*/
 .Header {
   color: white;
   background-color: #101214;
   border-bottom: thin solid gray;
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
 }
 
 /* Nav-bar buttons style */
@@ -92,8 +91,6 @@ body {
 
   background-color: white;
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
 }
 
 .Title1 {
@@ -105,6 +102,8 @@ body {
   margin: 30px;
 }
 
+/* Name generator div setting */
+
 .Gen {
   margin: auto;
   width: 50%;
@@ -115,6 +114,14 @@ body {
   border-radius: 10px;
   border: thin solid black;
   box-shadow: 0px 0px 20px 10px rgba(70, 66, 66, 0.2);
+}
+
+.result-box {
+  width: 90%;
+  height: 65%;
+  margin: auto;
+  border-radius: 10px;
+  border: thin solid black;
 }
 
 /* Other things */
