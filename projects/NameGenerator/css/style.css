@@ -2,12 +2,20 @@ body {
   padding: 0;
   margin: 0;
   background-color: #ffffff;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: Aquire;
+  src: url(/resources/fonts/AquireBold-8Ma60.otf);
 }
 
 /* Header nav-bar setup*/
 .Header {
   color: white;
   background-color: #101214;
+  border-bottom: thin solid gray;
+
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
@@ -82,8 +90,8 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: #26292c;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
 }
@@ -92,6 +100,21 @@ body {
   text-align: center;
   vertical-align: top;
   color: inherit;
+  font-family: Aquire;
+  font-size: 300%;
+  margin: 30px;
+}
+
+.Gen {
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  padding: 5px;
+  color: black;
+  background-color: inherit;
+  border-radius: 10px;
+  border: thin solid black;
+  box-shadow: 0px 0px 20px 10px rgba(70, 66, 66, 0.2);
 }
 
 /* Other things */
@@ -101,44 +124,9 @@ body {
   height: fit-content;
 
   overflow: hidden;
-  float: left;
+  display: inline-block;
 
   padding: 1px;
   border: 1px #000000 solid;
   margin-right: 5px;
-}
-
-.Gen {
-  width: fit-content;
-  height: fit-content;
-  padding: 5px;
-  color: black;
-  background-color: rgb(255, 255, 255);
-  overflow: hidden;
-}
-
-.Generator {
-  text-align: center;
-  position: fixed;
-  width: 10%;
-  height: 10%;
-  top: 30%;
-  right: 50%;
-}
-
-.Title {
-  text-align: center;
-  font-size: inherit;
-  color: rgb(0, 0, 0);
-  position: fixed;
-  top: 25%;
-  right: 50%;
-}
-
-.Result {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  position: fixed;
-  top: 45%;
-  right: 50%;
 }
