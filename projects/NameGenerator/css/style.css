@@ -141,9 +141,13 @@ body {
   margin-right: 5px;
 }
 
-.exlusion-name-result select {
+.exlusion-select {
+  padding: 10px 0px;
+}
+
+.exlusion-select select {
   font-family: inherit;
-  display: none;
+  padding: 5px;
 }
 
 .Generator {
