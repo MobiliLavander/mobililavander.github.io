@@ -28,7 +28,6 @@
     <div class="Page">
         <p class="Title1">RANDOM NAME GENERATOR</p>
 
-
         <div class="Gen">
             <div class="Buttons">
                 <p style="margin: 0px;">Nomi</p>
@@ -73,8 +72,36 @@
             <button class="Generator" id="gen"
                 onClick="singleExtraction(document.getElementById('nomi').value, document.getElementById('gruppi').value)">Genera
             </button>
-            <p id="Result" class="Result"> Risultati</p>
+            <div class="exlusion-name-result">
+                Nomi da escludere:
+                <select>
+                    <option value=null>----</option>
+                    <option value="almonte">+ Almonte</option>
+                    <option value="basa">+ Basa</option>
+                    <option value="bhoyrub">+ Bhoyrub</option>
+                    <option value="boezio">+ Boezio</option>
+                    <option value="cossettini">+ Cossettini</option>
+                    <option value="cova">+ Cova</option>
+                    <option value="d'agosto">+ D'Agosto</option>
+                    <option value="di lenardo">+ Di Lenardo</option>
+                    <option value="dordolo">+ Dordolo</option>
+                    <option value="ellero">+ Ellero</option>
+                    <option value="fabbro">+ Fabbro</option>
+                    <option value="garofolo">+ Garofolo</option>
+                    <option value="giancristofaro">+ Giancristofaro</option>
+                    <option value="iacuzzi">+ Iacuzzi</option>
+                    <option value="moro">+ Moro</option>
+                    <option value="nobile">+ Nobile</option>
+                    <option value="pagnutti">+ Pagnutti</option>
+                    <option value="pellegrini">+ Pellegrini</option>
+                    <option value="pellizzari">+ Pellizzari</option>
+                    <option value="ruffo">+ Ruffo</option>
+                    <option value="savorgano">+ Savorgano</option>
+                    <option value="venutrini">+ Venutrini</option>
+                </select>
+            </div>
             <div class="result-box">
+                <p id="Result" class="Result"> Risultati</p>
 
             </div>
         </div>

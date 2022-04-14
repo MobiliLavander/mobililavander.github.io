@@ -63,7 +63,6 @@ body {
   width: inherit;
   text-decoration: none;
   display: block;
-  float: none;
 }
 
 /* Menu options activation animation */
@@ -118,10 +117,15 @@ body {
 
 .result-box {
   width: 90%;
-  height: 65%;
+  height: 80%;
   margin: auto;
   border-radius: 10px;
   border: thin solid black;
+}
+
+.result {
+  margin: 0;
+  padding: 5px;
 }
 
 /* Other things */
@@ -134,6 +138,15 @@ body {
   display: inline-block;
 
   padding: 1px;
-  border: 1px #000000 solid;
   margin-right: 5px;
+}
+
+.exlusion-name-result select {
+  font-family: inherit;
+  display: none;
+}
+
+.Generator {
+  float: right;
+  vertical-align: middle;
 }
