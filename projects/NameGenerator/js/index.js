@@ -1,4 +1,6 @@
+
 function singleExtraction(nomi, gruppi) {
+    const result = document.getElementById('Result');
     let nomiGruppo = [];
     let nomiEstratti = [];
     const nomiDaEstrarre = 4;
@@ -23,7 +25,10 @@ function singleExtraction(nomi, gruppi) {
         nomiGruppo.toString();
         console.log(nomiGruppo.join(" "));
         nomiGruppo = [];
-        //document.getElementById("Result").innerHTML = `${nomiEstratti.join(" ")}`;
+        //Adding results to the webpage
+        let p = document.createElement("p");
+        p.innerHTML = `${(i + 1) + " " + nomiEstratti.join(" ")}`
+        result.appendChild(p);
     }
     nomiEstratti = [];
 };
