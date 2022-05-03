@@ -3,9 +3,11 @@ function singleExtraction(nomi, gruppi) {
     const result = document.getElementById('Result');
     let nomiGruppo = [];
     let nomiEstratti = [];
+    let nomiDaEscludere = [];
     const nomiDaEstrarre = 4;
     const nomiEstraibili = ["Almonte", "Basa", "Bhoyrub", "Boezio", "Cossettini", "Cova", "D'Agosto", "Di Lenardo", "Dordolo", "Ellero", "Fabbro", "Garofolo", "Giancristofaro", "Iacuzzi", "Moro", "Nobile", "Pagnutti", "Pellegrini", "Pellizzari", "Ruffo", "Savorgano", "Venutrini"];
 
+    if((nomi * gruppi) > (nomiEstraibili.length - nomiDaEscludere.length)) return alert('error');
     //console.log(`Estrazione fatta su: ${nomiEstraibili.length} persone, per ${gruppi} gruppi, composti da ${nomi} persone ognuno.`)
     //Crezione Gruppi
     for (let i = 0; i < gruppi; i++) {
@@ -24,10 +26,10 @@ function singleExtraction(nomi, gruppi) {
         //Converting array into string
         nomiGruppo.toString();
         console.log(nomiGruppo.join(" "));
-        nomiGruppo = [];
         //Adding results to the webpage
         let p = document.createElement("p");
-        p.innerHTML = `${(i + 1) + " " + nomiEstratti.join(" ")}`
+        p.innerHTML = `${(i + 1) + " " + nomiGruppo.join(" ")}`
+        nomiGruppo = [];
         result.appendChild(p);
     }
     nomiEstratti = [];
