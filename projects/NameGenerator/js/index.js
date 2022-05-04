@@ -1,4 +1,6 @@
 
+
+
 function singleExtraction(nomi, gruppi) {
     const result = document.getElementById('Result');
     let nomiGruppo = [];
@@ -7,7 +9,7 @@ function singleExtraction(nomi, gruppi) {
     const nomiDaEstrarre = 4;
     const nomiEstraibili = ["Almonte", "Basa", "Bhoyrub", "Boezio", "Cossettini", "Cova", "D'Agosto", "Di Lenardo", "Dordolo", "Ellero", "Fabbro", "Garofolo", "Giancristofaro", "Iacuzzi", "Moro", "Nobile", "Pagnutti", "Pellegrini", "Pellizzari", "Ruffo", "Savorgano", "Venutrini"];
 
-    if((nomi * gruppi) > (nomiEstraibili.length - nomiDaEscludere.length)) return alert('Error!');
+    if ((nomi * gruppi) > (nomiEstraibili.length - nomiDaEscludere.length)) return alert('Error!');
     //console.log(`Estrazione fatta su: ${nomiEstraibili.length} persone, per ${gruppi} gruppi, composti da ${nomi} persone ognuno.`)
     //Crezione Gruppi
     for (let i = 0; i < gruppi; i++) {
