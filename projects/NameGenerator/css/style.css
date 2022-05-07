@@ -151,5 +151,9 @@ body {
 
 .Generator {
   float: right;
-  vertical-align: middle;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
 }
