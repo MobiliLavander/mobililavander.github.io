@@ -3,7 +3,7 @@ function preload() {
 }
 
 function setup() {
-  let cnv = createCanvas(100, 100);
+  let cnv = createCanvas(500, 500);
   cnv.mouseClicked(togglePlay);
   fft = new p5.FFT();
   sound.amp(0.2);
