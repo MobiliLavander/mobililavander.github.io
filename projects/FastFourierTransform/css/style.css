@@ -15,8 +15,8 @@ body {
 }
 
 h1 {
-    text-align: center;
     font-size: xx-large;
     display: flex;
     color: #949597;
+    justify-content: center;
 }
