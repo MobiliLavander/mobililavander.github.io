@@ -1,5 +1,5 @@
 function preload(){
-    sound = loadSound('assets/Damscray_DancingTiger.mp3');
+    sound = loadSound('');
   }
   
   function setup(){
