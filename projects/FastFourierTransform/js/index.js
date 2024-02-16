@@ -1,5 +1,5 @@
 function preload(){
-    sound = loadSound('projects/FastFourierTransform/50 Cent - In Da Club - Get Rich or Die Tryin.mp3');
+    sound = loadSound('./test.mp3');
   }
   
   function setup(){
