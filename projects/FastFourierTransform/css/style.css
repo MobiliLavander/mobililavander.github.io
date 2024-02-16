@@ -12,10 +12,10 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: #101214;
   color: #949597;
-  align-items: center;
 }
 
 h1 {
     font-size: large;
+    display: flex;
     color: #949597;
 }
