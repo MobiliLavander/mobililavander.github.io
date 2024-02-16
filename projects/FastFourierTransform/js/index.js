@@ -7,7 +7,6 @@ function setup() {
   cnv.mouseClicked(togglePlay);
   fft = new p5.FFT();
   sound.amp(0.2);
-  s;
 }
 
 function draw() {
